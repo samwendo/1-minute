@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body style="background-image:url(https://images.pexels.com/photos/133175/pexels-photo-133175.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) ;">
+  
+{%  extends 'base.html' %}
+{% block content%}
+  <div class="container-fluid mainpage">
+      <div class="row">
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-8 welcome">
+          <h2>ONE MINUTE PITCH</h2>
+          <p>Welcome to one minute pitch</p>
+          <p>Suppose in your life, you only have 60 seconds to impress someone. 1 minute can make or break you!!!</p>
+          <p>How will you use that one minute to say something meaningful??</p>
+          {% if current_user.is_authenticated %}
+          <p>You can create your own category to pitch in :<button onclick="toggle_display('.add_category')" type="submit" name="add_category">ADD A CATEGORY</button></p>
+          <div class="add_category">
+            <form>
+              <p><input type="text" name="add_category" placeholder="Enter Category Name" class="form-control">
+              <input type="submit"  value="Submit" class="btn btn-default">
+              </p>
+
+             </form>
+          </div>
+          <p><strong>{{message}}</strong></p>
+          {%endif%}
+          <p>You can select one of the existing categories to pitch in:<button onclick="toggle_display('.select_category')" type="submit" name="add_category">SELECT A CATEGORY</button></p>
+          <div class="select_category">
+            <ul>
+              {%for category in categories%}
+                <li><a href="{{url_for('main.pitch', category_id = category.id) }}">{{category.name}}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+          <h2>Use your one minute wisely!! Best of luck!!</h2>
+        </div>
+        <div class="col-md-2">
+        </div>
+      </div>
+  </div>
+{%endblock%}
+</body>
+</html>
