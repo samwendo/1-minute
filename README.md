@@ -40,3 +40,9 @@ Other users can give feedback to the pitch posts by commenting, liking or dislik
 ### Prerequsites
     - Python 3.6
     - Ubuntu software
+
+### Clone the Repo
+Run the following command on the terminal:
+``
+
+Install [Postgres](https://www.postgresql.org/download/)
