@@ -1,5 +1,5 @@
 body {
-  background-image: url("https://images.pexels.com/photos/133175/pexels-photo-133175.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-image: url("https://images.pexels.com/photos/548414/pexels-photo-548414.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 50px;
@@ -25,19 +25,19 @@ h2 {
   height: 100px;
 }
 
-/* .navbar{
+ .navbar{
     font-size: 20px;
     height:70px;
     padding-top: 10px;
-  } */
+  }
 
-/* .dropdown-item{
+ .dropdown-item{
     font-size: 20px;
     padding-top:5px;
     padding-bottom: 5px;
     padding-left: 10px;
     text-align: center; 
-  }*/
+  }
 
 .welcome {
   background-color: #F4F4EE;
