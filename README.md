@@ -78,3 +78,10 @@ Open the browser on `http://localhost:5000/`
 
 ```None so far but i'll be glad to be communicated to if there is one ```
 
+## Technologies used
+    - Python 3.6
+    - HTML
+    - Bootstrap 4
+    - Animate CSS
+    - Heroku
+    - Postgresql
