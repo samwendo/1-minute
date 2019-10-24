@@ -19,3 +19,17 @@ The Pitch web application is meant for users to post pitches on any of the 7 dif
     A user can select any of the categories from the navbar to view the pitches on these categories
 
 Other users can give feedback to the pitch posts by commenting, liking or disliking the pitch. 
+
+## BDD
+
+| Behavior            | Input                         | Output                        | 
+| ------------------- | ----------------------------- | ----------------------------- |
+| Signing up | Fill in the form in the signup page | Redirects to the login page |
+| Signing in | Fill in the form in the signin page | Redirects to the home page |
+| Posting a pitch | In the home page, enter your pitch in text, select a category in the drop down menu and hit Pitch It Button! | Reloads the page with the pitch as the newest pitch |
+| Liking a pitch | Press the thumbs up button | Redirects the user to the specific pitch, and the like counter goes to 1 |
+| Disliking a pitch | Press the thumbs down button | Redirects the user to the specific pitch, and the dislike counter goes to 1 |
+| Leaving feedback on the pitch | Type the feedback on the text area field in the pitch page, and hit post comment | Reloads the page and posts the feedback. The comments will be shown from the most recent |
+| Viewing user profile | Click on the users name | Redirects the user to the clicked user profile |
+| Uploading a photo | Click on the choose file button and choose file | The page will be refreshed with the profile photo updated |
+
