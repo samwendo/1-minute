@@ -85,3 +85,6 @@ Open the browser on `http://localhost:5000/`
     - Animate CSS
     - Heroku
     - Postgresql
+
+## Support and contact details
+Contact me on WENDOSAM21@GMAIL.COM for any comments, reviews or advice.
