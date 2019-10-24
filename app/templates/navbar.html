@@ -1,34 +1,46 @@
 {%  extends 'base.html' %}
-<div class="navbar navbar-expand-lg navbar-dark bg-primary " role="navigation">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<div class="navbar navbar-expand-lg navbar-dark bg-dark " role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
             <a class="navbar-brand" href="/"> ONE MINUTE PITCH </a>
         </div>
         <div class="navbar-collapse collapse">
+            
+            <ul class="nav navbar-nav" >
+               
+                <li>
+                        <li> <a href="/">Home</a> </li>
+                </li>
+
+            </ul>
             <ul class="nav navbar-nav">
-                <li><a href="/">Home</a></li>
+                 
+               
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="Preview" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                  Categories
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="Preview">
-                  {%for category in categories%}
-                  <a   style="text-emphasis-color: black;" class="dropdown-item" href="{{url_for('main.pitch', category_id = category.id) }}">{{category.name}}</a>
-                  {% endfor %}
-                  </div>
+                    
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="Preview" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false">
+                        Categories
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="Preview">
+                        {%for category in categories%}
+                        <a class="dropdown-item"
+                            href="{{url_for('main.pitch', category_id = category.id) }}">{{category.name}}</a>
+                        {% endfor %}
+                    </div>
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              {% if current_user.is_authenticated %}
-               <li><a href="{{url_for('main.profile',uname=current_user.username)}}">Profile</a></li>
-              <li><a href="{{url_for('auth.logout')}}">LOGOUT</a></li>
-              {% else %}
-              <li><a href="{{url_for('auth.login')}}" style="text-emphasis-color: black;" >LOGIN</a></li>
-              {%endif%}
+                {% if current_user.is_authenticated %}
+                <li><a href="{{url_for('main.profile',uname=current_user.username)}}">Profile</a></li>
+                <li><a href="{{url_for('auth.logout')}}">LOGOUT</a></li>
+                {% else %}
+                <li><a href="{{url_for('auth.login')}}" style="text-emphasis-color: black;">LOGIN</a></li>
+                {%endif%}
             </ul>
         </div>
 
     </div>
 </div>
-
-
