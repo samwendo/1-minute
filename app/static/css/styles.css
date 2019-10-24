@@ -1,5 +1,5 @@
 body {
-  background-image: url("https://images.pexels.com/photos/548414/pexels-photo-548414.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-image: url(https://s5.eestatic.com/2017/08/25/actualidad/Actualidad_241740063_129998100_1024x576.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 50px;
@@ -9,7 +9,7 @@ body {
 p {
   color: #81817B;
   font-size: 25px;
-  font-family: 'Rancho', cursive;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 h1,
