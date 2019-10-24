@@ -36,3 +36,7 @@ Other users can give feedback to the pitch posts by commenting, liking or dislik
 ## Live link
 
 ## Set-up and Installation
+
+### Prerequsites
+    - Python 3.6
+    - Ubuntu software
