@@ -70,6 +70,11 @@ python manage.py db upgrade
 ```
 ### Running the app in development
 In the same terminal type:
-`python3 manage.py server`
-
+`chmode a+x start.sh`
+`./start.sh`
 Open the browser on `http://localhost:5000/`
+
+## Known bugs
+
+```None so far but i'll be glad to be communicated to if there is one ```
+
