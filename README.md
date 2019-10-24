@@ -62,3 +62,9 @@ Install dependancies that will create an environment for the app to run
 export DATABASE_URL='postgresql+psycopg2://username:password@localhost/pitchit'
 export SECRET_KEY='Your secret key'
 ```
+### Run Database Migrations
+```
+python manage.py db init
+python manage.py db migrate -m "initial migration"
+python manage.py db upgrade
+```
