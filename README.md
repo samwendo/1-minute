@@ -33,3 +33,4 @@ Other users can give feedback to the pitch posts by commenting, liking or dislik
 | Viewing user profile | Click on the users name | Redirects the user to the clicked user profile |
 | Uploading a photo | Click on the choose file button and choose file | The page will be refreshed with the profile photo updated |
 
+## Live link
