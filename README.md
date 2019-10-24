@@ -56,3 +56,9 @@ Run the following commands in the same terminal:
 ### Install dependancies
 Install dependancies that will create an environment for the app to run
 `pip3 install -r requirements`
+
+### Prepare environment variables
+```bash
+export DATABASE_URL='postgresql+psycopg2://username:password@localhost/pitchit'
+export SECRET_KEY='Your secret key'
+```
