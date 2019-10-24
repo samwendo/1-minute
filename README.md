@@ -46,3 +46,9 @@ Run the following command on the terminal:
 ``
 
 Install [Postgres](https://www.postgresql.org/download/)
+
+### Create a Virtual Environment
+Run the following commands in the same terminal:
+`sudo apt-get install python3.6-venv`
+`python3.6 -m venv virtual`
+`source virtual/bin/activate`
