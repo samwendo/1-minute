@@ -52,3 +52,7 @@ Run the following commands in the same terminal:
 `sudo apt-get install python3.6-venv`
 `python3.6 -m venv virtual`
 `source virtual/bin/activate`
+
+### Install dependancies
+Install dependancies that will create an environment for the app to run
+`pip3 install -r requirements`
