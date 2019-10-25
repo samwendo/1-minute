@@ -43,39 +43,52 @@ Other users can give feedback to the pitch posts by commenting, liking or dislik
 *https://pitch43.herokuapp.com*
 
 ## Set-up and Installation
+
  git clone **https://github.com/samwendo/1-minute.git**
+
 ### Prerequsites
+
     - Python 3.6
     - Ubuntu software
 
 ### Clone the Repo
+
 Run the following command on the terminal:
+
 ``
 
 Install [Postgres](https://www.postgresql.org/download/)
 
 ### Create a Virtual Environment
+
 Run the following commands in the same terminal:
 `sudo apt-get install python3.6-venv`
 `python3.6 -m venv virtual`
 `source virtual/bin/activate`
 
 ### Install dependancies
+
 Install dependancies that will create an environment for the app to run
 `pip3 install -r requirements`
 
 ### Prepare environment variables
+
 ```bash
+
 export DATABASE_URL='postgresql+psycopg2://username:password@localhost/pitchit'
 export SECRET_KEY='Your secret key'
 ```
+
 ### Run Database Migrations
+
 ```
 python manage.py db init
 python manage.py db migrate -m "initial migration"
 python manage.py db upgrade
 ```
+
 ### Running the app in development
+
 In the same terminal type:
 `chmode a+x start.sh`
 `./start.sh`
@@ -86,16 +99,18 @@ Open the browser on `http://127.0.0.1:5000/`
 ```None so far but i'll be glad to be communicated to if there is one ```
 
 ## Technologies used
-    - Python 3.6
-    - HTML
-    - Bootstrap 4
-    - Animate CSS
-    - Heroku
-    - Postgresql
+   
+- Python 3.6
+- HTML
+- Bootstrap 4
+- Animate CSS
+- Heroku
+- Postgresql
 
 ## Support and contact details
+
 Contact me on WENDOSAM21@GMAIL.COM for any comments, reviews or advice.
 
 ### License
-Copyright (c) **SAM WENDO**
 
+Copyright (c) **SAM WENDO**

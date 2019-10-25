@@ -17,17 +17,22 @@
                
                 <li class="nav-item dropdown">
                     
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="Preview" href="category.html" role="button"
-                        aria-haspopup="true" aria-expanded="false">
-                        Categories
-                    </a>
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="Preview" href="category.html" role="button" aria-haspopup="true" aria-expanded="false">Categories</a>
+                    
                     <div class="dropdown-menu" aria-labelledby="Preview">
+                    
                         {%for category in categories%}
+                    
                         <a class="dropdown-item" href="{{url_for('main.pitch', category_id = category.id) }}">{{category.name}}</a>
+                    
                         {% endfor %}
+                    
                     </div>
+                
                 </li>
+            
             </ul>
+            
             <ul class="nav navbar-nav navbar-right">
                 {% if current_user.is_authenticated %}
                 <li><a href="{{url_for('main.profile',uname=current_user.username)}}">Profile</a></li>

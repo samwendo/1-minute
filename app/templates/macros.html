@@ -1,4 +1,7 @@
-{% macro displayPitches(my_pitches) %} {% for pitch in my_pitches %}
+{% macro displayPitches(my_pitches) %} 
+
+{% for pitch in my_pitches %}
+
 <div class="col-md-12 pitches">
     {% if pitch.user.profile_pic_path %}
     <p>
@@ -65,4 +68,6 @@
         </li>
     </ul>
 </div>
-{% endfor %} {% endmacro %}
+{% endfor %} 
+
+{% endmacro %}

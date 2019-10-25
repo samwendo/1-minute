@@ -3,7 +3,17 @@
 {% block content %}
 <div class="container">
   <div class="row">
-    
+     
+      <div  style="background-color: aliceblue;" class="col-md-4">
+         
+       <h3  > {{user.username| capitalize}} </h3>
+      
+       {% if user.bio %}
+      <p> <strong>{{user.bio| capitalize}} </strong></p>
+    {%else%}
+      <p> <strong>{{user.username| capitalize}} has no bio  </strong></p>
+    {% endif %}
+    </div>
   </div>
 </div>
 {% endblock %}
