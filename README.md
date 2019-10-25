@@ -1,10 +1,15 @@
-# [Pitch]
+# Pitch
+
+
 
 ## Pitch  is a web application that is meant for users to add pitches on 7 different categories
 
-### Oct 23rd, 2019
+## DATE
+
+Oct 23rd, 2019
 
 ## Description
+
 The Pitch web application is meant for users to post pitches on any of the 7 different categories. These categories are:
 
     1. Interview Pitch
@@ -18,7 +23,7 @@ The Pitch web application is meant for users to post pitches on any of the 7 dif
 
     A user can select any of the categories from the navbar to view the pitches on these categories
 
-Other users can give feedback to the pitch posts by commenting, liking or disliking the pitch. 
+Other users can give feedback to the pitch posts by commenting, liking or disliking the pitch.
 
 ## BDD
 
@@ -35,8 +40,10 @@ Other users can give feedback to the pitch posts by commenting, liking or dislik
 
 ## Live link
 
-## Set-up and Installation
+*https://pitch43.herokuapp.com*
 
+## Set-up and Installation
+ git clone **https://github.com/samwendo/1-minute.git**
 ### Prerequsites
     - Python 3.6
     - Ubuntu software
@@ -72,7 +79,7 @@ python manage.py db upgrade
 In the same terminal type:
 `chmode a+x start.sh`
 `./start.sh`
-Open the browser on `http://localhost:5000/`
+Open the browser on `http://127.0.0.1:5000/`
 
 ## Known bugs
 
