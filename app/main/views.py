@@ -11,17 +11,17 @@ import markdown2
 def index():
     # categories = Category.query.all()
     # add_category = request.args.get('add_category')
-    # if add_category:
-    #     if add_category in categories:
-    #         message="Category already exist"
-    #     else:
-    #         category = Category(name = add_category)
-    #         db.session.add(category)
-    #         db.session.commit()
-    #         message = "Category added!! Go ahead and pitch in the created category"
-    #         categories = Category.query.all()
+    # # if add_category:
+    # #     if add_category in categories:
+    # #         message="Category already exist"
+    # #     else:
+    # #         category = Category(name = add_category)
+    # #         db.session.add(category)
+    # #         db.session.commit()
+    # #         message = "Category added!! Go ahead and pitch in the created category"
+    # #         categories = Category.query.all()
     
-        return render_template('index.html')
+    return render_template('index.html')
 
 @main.route('/pitch/<category_id>', methods = ["GET","POST"])
 def pitch(category_id):

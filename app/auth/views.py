@@ -5,6 +5,7 @@ from ..models import User
 from .forms import LoginForm,RegistrationForm
 from .. import db
 from ..email import mail_message
+from flask_mail import Message
 
 
 @auth.route('/login', methods=['GET','POST'])
@@ -19,11 +20,11 @@ def login():
             return redirect(request.args.get('next') or url_for('main.index'))
         elif user is not None and user.verify_password(login_form.password.data)==False:
             flash('Invalid username or Password')
-    title = "LOGIN"
+    title = "LOGIN | One Minute Pitch"
     return render_template('auth/login.html', login_form = login_form, title = title)
 
 
-@auth.route('/register', methods = ["GET", "POST"])
+@auth.route('/register', methods = ['GET','POST'])
 def register():
     form = RegistrationForm()
     if form.validate_on_submit():

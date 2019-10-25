@@ -23,8 +23,7 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="Preview">
                         {%for category in categories%}
-                        <a class="dropdown-item"
-                            href="{{url_for('main.pitch', category_id = category.id) }}">{{category.name}}</a>
+                        <a class="dropdown-item" href="{{url_for('main.pitch', category_id = category.id) }}">{{category.name}}</a>
                         {% endfor %}
                     </div>
                 </li>

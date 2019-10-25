@@ -8,7 +8,7 @@ body {
 
 p {
   color: #81817B;
-  font-size: 25px;
+  /* font-size: 25px; */
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -32,7 +32,7 @@ h2 {
     
   }
 
- .dropdown-item{
+  .dropdown-item{
     font-size: 20px;
     padding-top:5px;
     padding-bottom: 5px;
